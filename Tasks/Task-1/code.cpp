@@ -18,8 +18,11 @@ void main()
    
     for(int i=2;i<mex;i++)
     {
+        if(arr[i]==false)  // added this checkcase for checking if the no if already prime 
+        {
         for(int j=i;j<mex;j++)
         arr[j]=true;
+     }
     }
    
     for(int i=l;i<r;i++)
