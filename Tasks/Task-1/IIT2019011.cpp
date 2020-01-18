@@ -20,7 +20,7 @@ void main()
     {
         if(arr[i]==false)  // added this checkcase for checking if the no if already prime 
         {
-        for(int j=i;j<mex;j++)
+        for(int j=i*i;j<mex;j=j+i)
         arr[j]=true;
      }
     }
